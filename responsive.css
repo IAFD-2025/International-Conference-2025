@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Make images and videos responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fluid container */
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Navigation responsiveness */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Ensure tables are scrollable */
+table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+/* Responsive Grid Layout (Example) */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px; /* Adjust this based on your layout */
+  margin: 10px;
+}
+
+/* Responsive Typography */
+h1, h2, h3, h4, h5, h6 {
+  word-wrap: break-word;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column; /* Stack navigation items */
+    align-items: flex-start;
+  }
+
+  .column {
+    min-width: 100%; /* Stack columns on smaller screens */
+  }
+
+  button, input {
+    width: 100%; /* Full width for buttons and inputs */
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .container {
+    padding: 5px;
+  }
+}
