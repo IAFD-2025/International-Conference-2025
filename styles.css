@@ -467,6 +467,7 @@ header h1, header h2 {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    text-align:justify;
 }
 
 .committee-left,
