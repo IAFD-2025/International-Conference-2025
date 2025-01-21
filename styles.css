@@ -460,7 +460,7 @@ header h1, header h2 {
     color: #d8a600;
     border-bottom: 2px solid #d8a600;
     padding-bottom: 5px;
-    text-align: center;
+    text-align: justify;
 }
 
 .committee-container {
