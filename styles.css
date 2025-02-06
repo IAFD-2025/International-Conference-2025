@@ -362,9 +362,12 @@ section h2 {
     }
 
     .university-key-officials {
-        display: flex;
-        justify-content: center;
-        gap: 20px; /* Space between the images */
+        display: grid;
+        background: #002244;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 20px; /* Space between items */
+        justify-items: center; /* Center-align items horizontally */
+        align-items: center; /* Space between the images */
     }
 
     .member {
